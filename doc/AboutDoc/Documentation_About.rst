@@ -32,9 +32,12 @@ The tool used by OpenShot is Sphinx to create both the online HTML and the offli
 You can suggest improvements or submit small changes for our documentation on our Github here: 
 https://github.com/OpenShot/openshot-qt/issues/2989
 
-Or in *this* reddit thread. 
+.. todo:: 
+  **Discuss if this is needed/desired and if Reddit threads can be pinned to top. **
+  Todo: Reddit thread to be made, bookmarked?, add hyperlink
+  Or in *this* reddit thread. 
+  
 
-.. TODO: Reddit thread to be made, bookmarked?, add hyperlink 
 
 The preferred method for submitting large edits would be via GitHub Pull Request. 
 But we can make accommodations for anyone who would like to contribute but is not familiar with version-control systems like Git.
@@ -50,7 +53,7 @@ Github
 In the issue tracker, subjects that contain explanations that should probably be included in the documentation can be labeled `docs <https://github.com/OpenShot/openshot-qt/labels/docs>`_\ .
 Questions that are answered often in Github or Reddit can be tagged *FAQ* / are tagged **question**
 
-.. TODO: Add link Reddit + link Github
+.. TODO:: Add link Reddit + link Github
 
 |  Tutorials how to add changes to Github: 
 |  Github on Pull requests https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
@@ -166,21 +169,25 @@ There are four reasons for this:
 Comments for why things are documented a certain way can be hidden after a double dot and start with "NOTE: ". 
 They may contain a link to a relevant issue in the tracker for more information. 
 
-Translation
------------
-Translation files are generated and managed by Sphinx.
-If the images are not translated, they will default back to the original.
-Filenames do not get translated.
-There may be translation notes hidden in the documentation, blocked out with \.. TRANSLATION NOTE: 
 
-Files for translation will be hosted at `Launchpad <https://translations.launchpad.net/openshot/2.0/+translations>`_.
+.. todo:: 
+  ** After finding out hpw translation files can be created, update this paragraph.**
 
-When translating numbers referencing a screenshot in non-western languages, please make sure to update the screenshot too. 
-If available, images of the translation should be saved in their subdirectory *(to be decided)* 
+  Translation
+  -----------
+  
+  Translation files are generated and managed by Sphinx.
+  If the images are not translated, they will default back to the original.
+  Filenames do not get translated.
+  There may be translation notes hidden in the documentation, blocked out with \.. TRANSLATION NOTE: 
+  Files for translation will be hosted at `Launchpad <https://translations.launchpad.net/openshot/2.0/+translations>`_.
+  When translating numbers referencing a screenshot in non-western languages, please make sure to update the screenshot too. 
+  If available, images of the translation should be saved in their subdirectory *(to be decided)* 
 
-.. TODO: Add subdirectory
+  .. TODO:: Add subdirectory
 
-.. TRANSLATION NOTE: After translating tables, make sure that the underlining of table rows stay the same length as the new words. 
+  .. TRANSLATION NOTE: After translating tables, make sure that the underlining of table rows stay the same length as the new words. 
+  
 
 Images
 ------
@@ -214,17 +221,14 @@ So that the illustrations reflect exactly what the user would expect to see in t
 |
 Images should be named descriptively, so the names have relevance long-term.
 It should say what it is, and it should be what it says. 
-They should (not?) be named for the tutorial page they belong to. 
-
-.. QUESTION: Opinions differ, see File naming and directory structure
+I suitable, they can be named for the tutorial page they belong to. 
 
 They can be named for Action-WindowName or ActionStepNumber. 
 Images belonging to a sequence should be numbered. 
 Names like intro-tutorial-step-1.png (followed by -step-2.png through -step-n.png), 
 interface-export-simple.png and so on. 
 
-.. QUESTION: Should image sequences be in the same resolution? 
-  So they can be combined to animation?
+.. TODO:: QUESTION: Should image sequences be in the same resolution? So they can be combined to animation?
 
 Tutorial art
 ------------
@@ -237,12 +241,9 @@ There is a green call-out circle  used for numbering in the repo under docs/imag
 It is editable in software that can edit SVG files (e.g. Inkscape and Illustrator). 
 The green arrow is not yet in the repo.
 
-.. TODO: upload font and callout circle to dir
-
-.. QUESTION: because it is an SVG, is the number changed in ReST?
-
-.. PROPOSAL: save all tutorial art into docs/pointers/ or something like that?
-
+.. TODO:: PROPOSAL: save all tutorial art into docs/pointers/ or something like that?
+.. TODO:: Upload font and callout circle to dir
+.. TODO:: Question: because it is an SVG, is the number changed in ReST?
 
 Video
 -----
@@ -264,8 +265,9 @@ Beside GIF, only Youtube videos can be embedded with the tag
 Tables
 ------
 
+.. TODO:: Table specifications
+
 | Todo: Issues with tables
 | https://github.com/OpenShot/openshot-qt/issues/1262
 | https://github.com/OpenShot/openshot-qt/pull/1272
 
-..  TODO: Table specifications
