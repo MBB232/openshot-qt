@@ -27,7 +27,7 @@ The source files for the manual are all found in the project repository, `(the d
 The documentation is written in reStructured Text, or ReST. 
 This is a plain text format encoded in UTF-8.
 It contains special syntax so formatting can be applied by third-party tools.
-The tool used by Openshot is Sphinx to create both the online HTML and the offline manual.
+The tool used by OpenShot is Sphinx to create both the online HTML and the offline manual.
 
 You can suggest improvements or submit small changes for our documentation on our Github here: 
 https://github.com/OpenShot/openshot-qt/issues/2989
