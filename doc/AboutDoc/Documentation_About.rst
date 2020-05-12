@@ -49,11 +49,12 @@ Is is also allows the the documentation to ger prosessed in other tools before i
 Github
 ------
 In the issue tracker, subjects that contain explanations that should probably be included in the documentation can be labeled `docs <https://github.com/OpenShot/openshot-qt/labels/docs>`_\ .
-Questions that are answered often in Github or Reddit can be tagged *FAQ* / are tagged **question**
 
-.. TODO:: Add link Reddit + link Github
+.. TODO:: Create WIKI FAQ + propose FAQ-tag. Include line: 
+          Questions that are answered often in Github or Reddit can be tagged **FAQ**
+          Add links Reddit + link Github
 
-|  Tutorials how to add changes to Github: 
+|  Tutorials for how to add changes to Github: 
 |  Github on Pull requests https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork
 |  Github text howto https://opensource.com/life/16/3/submit-github-pull-request
 |  Github video howto https://www.youtube.com/watch?v=rgbCcBNZcdQ
@@ -68,14 +69,19 @@ So it would set you up with a copy ("fork") under your account,
 where you can make changes before submitting them as a Pull Request.
 
 Editing on the web is perfectly workable.
-The only downside being that there is no real way to preview your changes.
+Rest files are automatically recognized by Github, to view the plain text version click on **raw** or the **edit** button. 
+A workflow test is included in the repo, and will be included in the fork. However, you will need to activate this under **Actions**
+Once activated, it will automatically run after every commit. 
+It will also generate the HTML version of the documentation as a so-called *artifact*, 
+and can be downloaded as ZIP package under the workflow event in the *Action* page. 
+
 With a local clone you can use a previewing editor or
 (if you have the necessary Sphinx tools installed)
 generate updated HTML docs and view them in a web browser.
 
 Sphinx
 ------
-`Spinx <https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`_ was created to simply generate documentation from Python sourcecode.
+`Spinx <https://www.sphinx-doc.org/en/master/>`_ was created to simply generate documentation from Python sourcecode.
 It is written in Python, and also used in other environments. 
 It is licensed under the BSD license.
 It can also export files for translation.
@@ -93,16 +99,18 @@ Tutorial video:	https://www.youtube.com/watch?v=ouHVkMo3gwE
 
 ReST Basic Syntax
 -----------------
-`List of basic syntax </Documentation_RestSyntax.rst>`_  in Openshot documentation.  
+.. TODO::  `List of basic/custom syntax </Documentation_RestSyntax.rst>`_  in Openshot documentation.  
 
 - Some explanation here:  https://hyperpolyglot.org/lightweight-markup
 - or here: https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
+- Sphinx ReST details https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#gotchas
 - Video tutorials here:  https://www.youtube.com/results?search_query=restructuredtext+tutorial
 
-Software 
+Most text editors with syntax highlighting and checking include a ReST language mode or templates can be added. 
 
-- Notepad++ ReST template:	https://github.com/steenhulthin/reStructuredText_NPP
-- Linux: 
+A crossplatfom ReST editor with automatic HTML previewing. is ATOM: https://atom.io/
+A Notepad++ ReST template:	https://github.com/steenhulthin/reStructuredText_NPP
+ 
 
 File naming and directory structure
 -----------------------------------
@@ -122,13 +130,10 @@ Images used in the documentation are in the ``doc/images`` subdirectory.
 File structure
 --------------
 
-Every file starts with 5 hidden segments (See `template <template.rst>`_ )
-
-- Copyright notice
-- Openshot description
-- Openshot disclaimer
-- License notice
-- Referral anchor for the title
+Every file starts with a hidden 4 paragraph block of the standard header. 
+It contains the Copyright notice, description of OpenShot,  disclaimer and License notice. 
+(See `template <template.rst>`_ )
+It is sometimes followed by a referral anchor for the title. 
 
 The content starts with a chapter title, double-underlined using equals signs (``=====``).
 This is followed by a short introduction describing what will be covered in the chapter.
@@ -160,16 +165,20 @@ This tends to be a pretty good fit for any sort of written prose, when it is in 
 There are four reasons for this:
 
 - Writing that way, there is no worrying about line length or when to wrap. 
-- It encourages shorter, simpler sentences which is a good thing when writing docs. 
 - The diffs when changes are submitted also tend to be more readable and focused. 
-- Lines are easier to translate and less likely to be changed. 
+- It encourages shorter, simpler sentences which is a good thing when writing docs. 
+- Short lines are easier to translate as they are less likely to be changed. 
 
 Comments for why things are documented a certain way can be hidden after a double dot and start with "NOTE: ". 
 They may contain a link to a relevant issue in the tracker for more information. 
 
+But comments regarding issues that are not complete (like new features) should be marked with the tag \.. TODO ::
+They will be emphasized by Github but filtered out of the final user documentation by Sphinx. 
+
+
 
 .. todo:: 
-  ** After finding out hpw translation files can be created, update this paragraph.**
+  ** After finding out how translation files can be created, update this paragraph.**
 
   Translation
   -----------
@@ -184,13 +193,13 @@ They may contain a link to a relevant issue in the tracker for more information.
 
   .. TODO:: Add subdirectory
 
-  .. TRANSLATION NOTE: After translating tables, make sure that the underlining of table rows stay the same length as the new words. 
+  .. TRANSLATION NOTE: After translating tables make sure they do not break. The underlining of table rows needs to be the same length as the new words. 
   
 
 Images
 ------
 
-**Please make sure to add your images under the GPL3 as well.**
+.. caution:: Please make sure to add your images under the GPL3 as well.
 
 **PNG** is the preferred format for screenshots, as it's not subject to compression artifacts the way JPG is. 
 JPG is fine too, though, if the quality is high enough (Compression of 90% or better). 
@@ -207,7 +216,7 @@ Images should be whatever shape they need to be in order to show the necessary i
 But since images will be scaled to fit the width of the page, in general images should not be unnecessarily wide. 
 Otherwise they can end up too small when displayed.
 
-.. NOTE: Verification Needed; 
+.. TODO:: Image width Verification Needed: 
   Is this set in the server? Does it apply to all browsers? Does this apply to offline docs too?
   From a test by ferdnyc "when I have a Chrome window open with the manual loaded into it, once the window hits about 1160px wide, that's it — the content stops getting any wider. Past that width (which is including the sidebar), the only thing that grows is the empty space to the right of the content container. And at that size, the images are scaled to 696px wide."
   https://github.com/OpenShot/openshot-qt/issues/2989
@@ -216,7 +225,7 @@ There is no demo art package available for screenshots.
 Screenshots showing different content is an opportunity to illustrate the variety of different features and configurations available.
 However during a step-by-step tutorial for a feature, it makes sense to have a set of consistent imports for all of the steps. 
 So that the illustrations reflect exactly what the user would expect to see in the actual software.
-|
+
 Images should be named descriptively, so the names have relevance long-term.
 It should say what it is, and it should be what it says. 
 I suitable, they can be named for the tutorial page they belong to. 
