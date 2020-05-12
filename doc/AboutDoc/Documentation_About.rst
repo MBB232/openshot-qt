@@ -27,7 +27,7 @@ The source files for the manual are all found in the project repository, `(the d
 The documentation is written in reStructured Text, or ReST. 
 This is a plain text format encoded in UTF-8.
 It contains special syntax so formatting can be applied by third-party tools.
-The tool used by OpenShot is Sphinx to create both the online HTML and the offline manual.
+Sphinx is the tool used by OpenShot to create the manual.
 
 You can suggest improvements or submit small changes for our documentation on our Github here: 
 https://github.com/OpenShot/openshot-qt/issues/2989
@@ -35,18 +35,16 @@ https://github.com/OpenShot/openshot-qt/issues/2989
 .. todo:: 
   **Discuss if this is needed/desired and if Reddit threads can be pinned to top. **
   Todo: Reddit thread to be made, bookmarked?, add hyperlink
-  Or in *this* reddit thread. 
+  finish line: Or in `this<url>`_ reddit thread. 
   
-
-
 The preferred method for submitting large edits would be via GitHub Pull Request. 
 But we can make accommodations for anyone who would like to contribute but is not familiar with version-control systems like Git.
 
 License
 -------
-We use the GPL-3 license (see above) for documentation, see the header.
-This is for simplicity because it is the same license as the project code.
-And because the documentation gets parsed in other tools before it reaches its final form.
+Project documentation is licensed under the same license as the source code.
+Specifically, the GNU General Public License version 3 or higher (GPLv3+); see the document header.
+Is is also allows the the documentation to ger prosessed in other tools before it reaches its final form.
 
 Github
 ------
