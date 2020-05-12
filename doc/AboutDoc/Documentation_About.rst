@@ -84,8 +84,6 @@ Sphinx
 `Spinx <https://www.sphinx-doc.org/en/master/>`_ was created to simply generate documentation from Python sourcecode.
 It is written in Python, and also used in other environments. 
 It is licensed under the BSD license.
-It can also export files for translation.
-
 Generating a local copy of the manual requires only the Python-based Sphinx documentation system and the Sphinx RTD theme.  
 They can be installed  using most package managers, or via 
 
@@ -172,7 +170,7 @@ There are four reasons for this:
 Comments for why things are documented a certain way can be hidden after a double dot and start with "NOTE: ". 
 They may contain a link to a relevant issue in the tracker for more information. 
 
-But comments regarding issues that are not complete (like new features) should be marked with the tag \.. TODO ::
+But comments regarding issues that are not complete (like new features) should be marked with the tag \.. TODO::
 They will be emphasized by Github but filtered out of the final user documentation by Sphinx. 
 
 
@@ -202,7 +200,7 @@ Images
 .. caution:: Please make sure to add your images under the GPL3 as well.
 
 **PNG** is the preferred format for screenshots, as it's not subject to compression artifacts the way JPG is. 
-JPG is fine too, though, if the quality is high enough (Compression of 90% or better). 
+JPG is fine too, if the quality is high enough (Compression of 90% or better). 
 Clarity is the priority, not file size. 
 
 Animated GIFs are not suitable as screenshots, because the animated component is only visible when the docs are viewed in web form. 
