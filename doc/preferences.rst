@@ -46,12 +46,14 @@ Preview
 
 .. image:: images/preferences-2-preview.png
 
+If you experience sound issues, make sure your audio settings are the same as your audio card. For more info check our FAQ on the wiki.[{Link WIKI tag AUDIO + FAQ ?]
 
 Autosave
 --------
 
 .. image:: images/preferences-3-autosave.png
 
+Advise on github?, Disable this by default to prevent your projects from being overwritten 
 
 Cache
 -----
