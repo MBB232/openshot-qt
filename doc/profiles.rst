@@ -44,7 +44,7 @@ The project profile is used when previewing your project and editing. The defaul
 It is best practice to always switch to your target profile before you begin editing. For example, if you are targeting
 1080p 30fps, switch to that profile before you begin editing your project.
 
-.. image:: images/profiles-choose-profile
+.. image:: images/profiles-choose-profile.png
 
 ==  ==================  ============
 #   Name                Description
