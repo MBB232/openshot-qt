@@ -44,7 +44,7 @@ The project profile is used when previewing your project and editing. The defaul
 It is best practice to always switch to your target profile before you begin editing. For example, if you are targeting
 1080p 30fps, switch to that profile before you begin editing your project.
 
-.. image:: images/profiles.jpg
+.. image:: images/profiles-choose-profile
 
 ==  ==================  ============
 #   Name                Description
@@ -173,5 +173,36 @@ into the file):
     sample_aspect_den=1
     display_aspect_num=16
     display_aspect_den=9
+    colorspace=709
 
 Once you restart OpenShot, you will see your custom profile appear in the list of Profiles.
+
+By reversing the values for 'width' and 'height', you can create a vertical profile. 
+The line 'progressive' is a binary value. 
+Set 1 for Progressive or 2 for interlaced.
+
+While there is a line for "colorspace", this is currently not supported. 
+
+.. TODO:: Colorspace is currently  broken, re-enable table when fixed. 
+  see  https://github.com/OpenShot/openshot-qt/issues/3427
+
+  =====  =====  =========
+  Value  Use    YUV colorspace used by International Telecommunications Union
+  =====  =====  =========
+  601    SD     Legacy. Use only if all source video is in this format
+  709    HD     Normal mode for most cases
+  2020   UHD    Not supported. 
+  =====  =====  =========
+
+Frame rate is defined as fraction, calculated by deviding frame_rate_num by frame_rate_den. 
+
+Frame rate (fps)  frame_rate_num  frame_rate_den
+================  ==============  =============
+24                24              1
+25                25              1
+30                30              1
+60                60              1
+23.98             24000           1001
+29.97             30000           1001
+59.94             60000           1001
+================  ==============  =============
