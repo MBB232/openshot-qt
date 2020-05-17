@@ -70,5 +70,5 @@ Keyboard
 --------
 .. image:: images/preferences-7-keyboard.png
 
-This is where hotkeys can be seen and re-assigned, as described under _`keyboard_shortcut_ref<tutorial>`
+This is where hotkeys can be seen and re-assigned, as described under _`tutorial<keyboard_shortcut_ref>`_
 
