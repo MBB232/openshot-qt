@@ -35,3 +35,39 @@ Preferences
 ===========
 
 
+General
+-------
+
+.. image:: images/preferences-1-general.png
+
+Preview
+-------
+
+.. image:: images/preferences-2-preview.png
+
+
+Autosave
+--------
+
+.. image:: images/preferences-3-autosave.png
+
+Cache
+-----
+
+.. image:: images/preferences-4-cache.png
+
+Debug
+-----
+
+.. image:: images/preferences-5-debug.png
+
+Performance
+-----------
+.. image:: images/preferences-6-performance.png
+
+
+Keyboard
+--------
+.. image:: images/preferences-7-keyboard
+
+This is where hotkeys can be seen and re-assigned, as described under ref:`tutorial`
