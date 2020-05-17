@@ -109,7 +109,7 @@ While there is a line for "colorspace", this is currently not supported.
 Frame rate is defined as fraction, calculated by deviding frame_rate_num by frame_rate_den. 
 
 Frame rate (fps)  frame_rate_num  frame_rate_den
-================  ==============  =============
+================  ==============  ==============
 24                24              1
 25                25              1
 30                30              1
@@ -117,5 +117,5 @@ Frame rate (fps)  frame_rate_num  frame_rate_den
 23.98             24000           1001
 29.97             30000           1001
 59.94             60000           1001
-================  ==============  =============
+================  ==============  ==============
 
