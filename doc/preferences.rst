@@ -46,7 +46,7 @@ Preview
 
 .. image:: images/preferences-2-preview.png
 
-If you experience sound issues, make sure your audio settings are the same as your audio card. For more info check our FAQ on the wiki.[{Link WIKI tag AUDIO + FAQ ?]
+If you experience sound issues, make sure your audio settings are the same as your audio card. For more info check our FAQ on the wiki.[Link WIKI tag AUDIO + FAQ ?]
 
 Autosave
 --------
@@ -76,5 +76,5 @@ Keyboard
 --------
 .. image:: images/preferences-7-keyboard.png
 
-This is where hotkeys can be seen and re-assigned, as described under _`tutorial<keyboard_shortcut_ref>`_
+This is where hotkeys can be seen and re-assigned, as described under :ref:`keyboard_shortcut_ref`
 
