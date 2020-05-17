@@ -40,6 +40,7 @@ General
 
 .. image:: images/preferences-1-general.png
 
+
 Preview
 -------
 
@@ -51,15 +52,18 @@ Autosave
 
 .. image:: images/preferences-3-autosave.png
 
+
 Cache
 -----
 
 .. image:: images/preferences-4-cache.png
 
+
 Debug
 -----
 
 .. image:: images/preferences-5-debug.png
+
 
 Performance
 -----------
