@@ -68,6 +68,7 @@ Performance
 
 Keyboard
 --------
-.. image:: images/preferences-7-keyboard
+.. image:: images/preferences-7-keyboard.png
 
-This is where hotkeys can be seen and re-assigned, as described under ref:`tutorial`
+This is where hotkeys can be seen and re-assigned, as described under :ref:`tutorial:keyboard_shortcut_ref`
+.. _keyboard_shortcut_ref:
