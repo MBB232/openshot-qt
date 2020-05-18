@@ -62,7 +62,7 @@ Export Profile
 
 The export profile always defaults to your current project profile, but can be changed to target different profiles.
 
-.. image:: images/profile-export.png
+.. image:: images/profiles-export.png
 
 ==  ==================  ============
 #   Name                Description
