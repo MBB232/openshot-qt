@@ -1,4 +1,4 @@
-.. Copyright (c) 2008-2016 OpenShot Studios, LLC
+.. Copyright (c) 2008-2020 OpenShot Studios, LLC
  (http://www.openshotstudios.com). This file is part of
  OpenShot Video Editor (http://www.openshot.org), an open-source project
  dedicated to delivering high quality video editing and animation solutions
@@ -37,6 +37,9 @@ Profiles
 A profile is a collection of common video settings (size, frame rate, aspect ratio, etc...). Profiles are used
 during editing, previewing, and exporting to provide a quick way to switch between common combinations of these settings.
 
+If you often use the same profile, you can set a default under:
+**Edit>Preferences>Preview>Default Profile**
+
 Project Profile
 ---------------
 
@@ -59,7 +62,7 @@ Export Profile
 
 The export profile always defaults to your current project profile, but can be changed to target different profiles.
 
-.. image:: images/export-profiles.jpg
+.. image:: images/profile-export.png
 
 ==  ==================  ============
 #   Name                Description
