@@ -93,8 +93,8 @@ into the file):
 Once you restart OpenShot, you will see your custom profile appear in the list of Profiles.
 
 By reversing the values for 'width' and 'height', you can create a vertical profile. 
-The line 'progressive' is a binary value. 
-Set 1 for Progressive or 2 for interlaced.
+The line 'progressive' is a  boolean value. 
+Set 1 for Progressive or 0 for interlaced.
 
 While there is a line for "colorspace", this is currently not supported. 
 
