@@ -54,16 +54,18 @@ Preview
 Here you can set the default Video Profile, but you can always choose a different one at the start of your project. More about :ref:`profiles`
 
 Here you can choose which connected audio device should be used by OpenShot. 
+If you experience sound issues, make sure your audio settings are the same as your audio card.
 The default audio sample rate of your sound device can be found under the sound device settings from your operating system. 
+
 .. TODO:: Add to FAQ, add Link [WIKI tag AUDIO + FAQ ?] here.  
-  If you experience sound issues, make sure your audio settings are the same as your audio card. For more info check our FAQ on the wiki.
+   For more info check our FAQ on the wiki.
+   Windows: disable audio enhancements/microphone recognition
 
 
 Autosave
 --------
 
 .. image:: images/preferences-3-autosave.png
-
 
 When loading in projects from older versions of OpenShot, you may want to terporary disable Autosave to see if they work. This to prevent them from being automatically overwritten by a broken version. 
 .. Advise SuslikV on github https://github.com/OpenShot/openshot-qt/issues/3334
@@ -72,8 +74,8 @@ Cache
 -----
 
 .. image:: images/preferences-4-cache.png
-.. TODO:: Chache settings
-  CacheMode - When to use Disk?
+.. TODO:: Cache settings
+  CacheMode - When to use Disk? Servers?
   Cache Limit (MB): How much % of RAM advised? Different for iGPU vs dedicated GPU?
   Image Format: What is PPM/XMB/XPM? Where is this used for? 
   Scale Factor: ??
